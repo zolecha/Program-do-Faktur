@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="1216.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.FakturaController">
+   <children>
+      <TableView fx:id="t_faktura" layoutX="14.0" layoutY="14.0" prefHeight="447.0" prefWidth="1184.0">
+        <columns>
+          <TableColumn fx:id="t_nip" prefWidth="91.0" text="NIP" />
+            <TableColumn fx:id="t_nr_f" prefWidth="76.99998474121094" text="nr faktury" />
+            <TableColumn fx:id="t_data_wystawienia" prefWidth="91.66665649414062" text="data wyst." />
+            <TableColumn fx:id="t_miejsce_wystawienia" prefWidth="96.33334350585938" text="miejsce wyst." />
+            <TableColumn fx:id="t_towar" prefWidth="75.66665649414062" text="towar" />
+            <TableColumn fx:id="t_ilosc" prefWidth="46.66668701171875" text="ilość" />
+            <TableColumn fx:id="t_jm" prefWidth="39.0" text="jm" />
+            <TableColumn fx:id="t_cena_j" prefWidth="101.0" text="cena jednostk." />
+            <TableColumn fx:id="t_netto" prefWidth="78.6666259765625" text="cena netto" />
+            <TableColumn fx:id="t_s_vat" prefWidth="81.6666259765625" text="stawka vat" />
+            <TableColumn fx:id="t_vat" prefWidth="76.6666259765625" text="vat" />
+            <TableColumn fx:id="t_brutto" prefWidth="92.33331298828125" text="cena brutto" />
+            <TableColumn fx:id="t_t_platnosci" prefWidth="122.66668701171875" text="termin płatności" />
+            <TableColumn fx:id="t_forma_platnosci" prefWidth="117.6666259765625" text="forma płatności" />
+        </columns>
+      </TableView>
+      <HBox alignment="TOP_RIGHT" layoutX="711.0" layoutY="477.0" prefHeight="25.0" prefWidth="486.0">
+         <children>
+            <Button contentDisplay="RIGHT" mnemonicParsing="false" onMouseClicked="#refreshFAction" prefHeight="7.0" prefWidth="116.0" text="Odśwież" />
+            <Button mnemonicParsing="false" onMouseClicked="#deleteAction" prefHeight="25.0" prefWidth="112.0" text="Usuń" />
+            <Button mnemonicParsing="false" onMouseClicked="#UpdateFAction" prefHeight="28.0" prefWidth="130.0" text="Popraw" />
+            <Button contentDisplay="RIGHT" mnemonicParsing="false" onMouseClicked="#closeFAction" prefHeight="25.0" prefWidth="118.0" text="Zamknij" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

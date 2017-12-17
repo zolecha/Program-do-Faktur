@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.AddKontrahentController">
+   <children>
+      <Label layoutX="218.0" layoutY="14.0" prefHeight="27.0" prefWidth="165.0" text="Dodawanie Kontrahenta">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_nip" layoutX="34.0" layoutY="72.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="tf_nazwa" layoutX="34.0" layoutY="120.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="tf_adres" layoutX="34.0" layoutY="164.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="tf_miejscowosc" layoutX="34.0" layoutY="209.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="tf_kod_pocztowy" layoutX="34.0" layoutY="246.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label layoutX="222.0" layoutY="72.0" prefHeight="25.0" prefWidth="120.0" text="NIP" />
+      <Label layoutX="222.0" layoutY="120.0" prefHeight="25.0" prefWidth="120.0" text="NAZWA" />
+      <Label layoutX="222.0" layoutY="164.0" prefHeight="25.0" prefWidth="120.0" text="ADRES" />
+      <Label layoutX="222.0" layoutY="209.0" prefHeight="25.0" prefWidth="120.0" text="MIEJSCOWOSC" />
+      <Label layoutX="222.0" layoutY="246.0" prefHeight="25.0" prefWidth="120.0" text="KOD-POCZTOWY" />
+      <Label layoutX="34.0" layoutY="293.0" prefHeight="73.0" prefWidth="281.0" />
+      <Button layoutX="342.0" layoutY="153.0" mnemonicParsing="false" onMouseClicked="#AddKontrahentAction" prefHeight="48.0" prefWidth="205.0" text="Dodaj">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="342.0" layoutY="73.0" mnemonicParsing="false" onMouseClicked="#clearAction" prefHeight="48.0" prefWidth="205.0" text="Wyczyść">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

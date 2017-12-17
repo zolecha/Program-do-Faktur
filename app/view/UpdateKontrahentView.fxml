@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.UpdateKontrahentController">
+   <children>
+      <Label layoutX="183.0" layoutY="14.0" prefHeight="27.0" prefWidth="235.0" text="Poprawianie danych Kontrahenta">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_nip" layoutX="34.0" layoutY="72.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="tf_nazwa" layoutX="34.0" layoutY="120.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="tf_adres" layoutX="34.0" layoutY="164.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="tf_miejscowosc" layoutX="34.0" layoutY="209.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="tf_kod_pocztowy" layoutX="34.0" layoutY="246.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label layoutX="222.0" layoutY="72.0" prefHeight="25.0" prefWidth="120.0" text="NIP" />
+      <Label layoutX="222.0" layoutY="120.0" prefHeight="25.0" prefWidth="120.0" text="NAZWA" />
+      <Label layoutX="222.0" layoutY="164.0" prefHeight="25.0" prefWidth="120.0" text="ADRES" />
+      <Label layoutX="222.0" layoutY="209.0" prefHeight="25.0" prefWidth="120.0" text="MIEJSCOWOSC" />
+      <Label layoutX="222.0" layoutY="246.0" prefHeight="25.0" prefWidth="120.0" text="KOD-POCZTOWY" />
+      <Label layoutX="34.0" layoutY="293.0" prefHeight="73.0" prefWidth="281.0" text="Wpisz tylko te dane, które chcesz poprawić" />
+      <Button layoutX="320.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#updateKontrahentAction" prefHeight="48.0" prefWidth="205.0" text="Zaakceptuj zmiany i wyjdź">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
